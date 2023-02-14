@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Bpit Stock</string>
+    <string name="already_have_an_account">Already Have an Account</string>
+    <string name="signed">signed</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="dont_have_an_account">Dont have an Account</string>
+    <string name="login">Login</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="register">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_faaram_wale_uncle">Welcome FAARAM wale uncle</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="view_all_items">View All Items</string>
+    <string name="bill_number">Bill Number</string>
+    <string name="received_quantity">Received Quantity</string>
+</resources>

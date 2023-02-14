@@ -1,0 +1,25 @@
+pluginManagement {
+//    repositories {
+//
+//    }
+  //  allprojects {
+        repositories {
+            gradlePluginPortal()
+            google()
+            mavenCentral()
+           // maven { url 'https://jitpack.io' }
+        }
+   // }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+
+       // classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3")
+    }
+}
+rootProject.name = "Bpit Stock"
+include ':app'

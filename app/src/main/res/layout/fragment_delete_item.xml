@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7F1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.auth.home.delete.DeleteItem">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:background="@color/pri"
+        android:id="@+id/vie"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_name_orTitle"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="Delete An Item"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vie"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="@id/vie"
+        app:layout_constraintTop_toBottomOf="@id/vie"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/mmmyyaa"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/crad_bakk"
+            app:cardCornerRadius="@dimen/_14sdp"
+            app:cardElevation="0dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/_12sdp"
+                android:id="@+id/searchbox"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:hint="Please provide the bill number"
+
+
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+
+                android:layout_marginTop="@dimen/_8sdp"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:id="@+id/gosearch"
+                    android:src="@drawable/ic_baseline_search_24"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:visibility="gone"
+        android:id="@+id/laayfound"
+        app:layout_constraintTop_toBottomOf="@id/mmmyyaa"
+
+        android:background="@color/pri"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:paddingTop="@dimen/_8sdp"
+            android:textColor="@color/white"
+            android:text="556658"
+            android:maxLines="1"
+            android:textSize="@dimen/_14ssp"
+
+            android:id="@+id/bill_no"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_weight="3"
+            android:fontFamily="@font/ubuntu_medium"
+            android:paddingTop="@dimen/_8sdp"
+            android:textColor="@color/white"
+            android:text="Duster"
+            android:maxLines="1"
+
+            android:textSize="@dimen/_14ssp"
+
+
+            android:id="@+id/name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:paddingTop="@dimen/_8sdp"
+            android:textColor="@color/white"
+            android:text="65"
+            android:maxLines="1"
+            android:textSize="@dimen/_14ssp"
+            android:id="@+id/qaun"/>
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/dell_items_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/red"
+        android:layout_margin="15dp"
+
+        android:text="Delete Item" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

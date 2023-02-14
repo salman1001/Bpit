@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/launchHome">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.coder.bpitstock.ui.auth.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <argument
+            android:name="type"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/launchHome"
+        android:name="com.coder.bpitstock.ui.auth.home.LaunchHome"
+        android:label="fragment_launch_home"
+        tools:layout="@layout/fragment_launch_home" >
+        <action
+            android:id="@+id/action_launchHome_to_homeFragment"
+            app:popUpTo="@id/launchHome"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_launchHome_to_addItem"
+            app:destination="@id/addItem" />
+        <action
+            android:id="@+id/action_launchHome_to_issueItems"
+            app:destination="@id/issueItems" />
+        <action
+            android:id="@+id/action_launchHome_to_deleteItem"
+            app:destination="@id/deleteItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/addItem"
+        android:name="com.coder.bpitstock.ui.auth.home.AddItem"
+        android:label="AddItem" >
+        <action
+            android:id="@+id/action_addItem_to_launchHome"
+            app:popUpTo="@id/launchHome"
+            app:popUpToInclusive="true"
+            app:destination="@id/launchHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/issueItems"
+        android:name="com.coder.bpitstock.ui.auth.home.issueitem.IssueItems"
+        android:label="IssueItems" >
+        <action
+            android:id="@+id/action_issueItems_to_launchHome"
+            app:popUpTo="@id/launchHome"
+            app:popUpToInclusive="true"
+            app:destination="@id/launchHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteItem"
+        android:name="com.coder.bpitstock.ui.auth.home.delete.DeleteItem"
+        android:label="fragment_delete_item"
+        tools:layout="@layout/fragment_delete_item">
+
+
+        <argument
+            android:name="Passsss"
+            app:argType="com.coder.bpitstock.ui.auth.home.random.PassItOn" />
+        <action
+            android:id="@+id/action_deleteItem_to_launchHome"
+            app:popUpTo="@id/launchHome"
+            app:popUpToInclusive="true"
+            app:destination="@id/launchHome" />
+    </fragment>
+</navigation>

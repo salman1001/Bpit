@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bakk"
+    tools:context=".ui.auth.home.LaunchHome">
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:background="@color/pri"
+        android:id="@+id/vie"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_name_orTitle"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="                Inventory Application"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vie"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:cardBackgroundColor="@color/pri"
+        app:cardCornerRadius="@dimen/_14sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+       >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_8sdp"
+            android:src="@drawable/homee"
+           />
+
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:text="                                               Inventory at your fingertip "
+        android:id="@+id/txtm"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/test_name_orTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:id="@+id/cardHeader"
+        app:cardBackgroundColor="@color/crad_bakk"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@id/vie"
+        app:layout_constraintTop_toBottomOf="@id/vie">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_14sdp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:id="@+id/lay_cor"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/lay_wro"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/correct" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="Add Items"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textColor="@color/primary_SECC"
+                    android:textSize="@dimen/_10ssp"/>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:id="@+id/lay_wro"
+                app:layout_constraintStart_toEndOf="@id/lay_cor"
+                app:layout_constraintEnd_toStartOf="@id/lay_Un"
+
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+
+                app:layout_constraintTop_toTopOf="parent">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:id="@+id/issueSingle"
+                    android:src="@drawable/unatt56565e"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="Issue Item"
+                    android:textColor="@color/primary_SECC"
+                    android:textSize="@dimen/_10ssp"/>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:id="@+id/lay_Un"
+                app:layout_constraintStart_toEndOf="@id/lay_wro"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:id="@+id/deleteee"
+                    android:src="@drawable/wrong" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Edit Items"
+                    android:textColor="@color/primary_SECC"
+                    android:textSize="@dimen/_10ssp"/>
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/myll"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@id/cardHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_4sdp"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/crad_bakk"
+                app:cardCornerRadius="@dimen/_14sdp"
+                app:cardElevation="0dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:id="@+id/searchbox"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:hint="Search an Item"
+
+
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+
+                        android:layout_marginTop="@dimen/_8sdp"
+              >
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:id="@+id/gosearch"
+                            android:src="@drawable/ic_baseline_search_24"/>
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/crad_bakk"
+                app:cardCornerRadius="@dimen/_14sdp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="0dp"
+                        app:cornerRadius="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/Showadded"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_10ssp"
+
+                        android:textColor="#056C1F"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:fontFamily="@font/ubuntu_bold"
+
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/green"
+                        android:layout_marginEnd="@dimen/_8sdp"
+
+                        android:text="Added Items"
+
+                        android:textStyle="bold"
+                        />
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="0dp"
+                        app:cornerRadius="@dimen/_10sdp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/Showissued"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_10ssp"
+
+                        android:textColor="#056C1F"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:fontFamily="@font/ubuntu_bold"
+
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/green"
+                        android:layout_marginEnd="@dimen/_8sdp"
+
+                        android:text="Issued Items"
+
+                        android:textStyle="bold"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="Recently Trending items"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:id="@+id/changeText"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/lightorange"
+            android:textStyle="bold"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ranking_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    tools:context=".ui.auth.home.LaunchHome">-->
+
+<!--   <androidx.constraintlayout.widget.ConstraintLayout-->
+
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="match_parent">-->
+
+<!--       <androidx.appcompat.widget.Toolbar-->
+<!--           android:id="@+id/toolbar"-->
+<!--           app:layout_constraintTop_toTopOf="parent"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:layout_width="match_parent"-->
+
+<!--           android:fitsSystemWindows="true"-->
+<!--           android:minHeight="?attr/actionBarSize"-->
+<!--           app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--           android:background="?attr/colorPrimary"/>-->
+<!--       <LinearLayout-->
+<!--           app:layout_constraintTop_toBottomOf="@id/toolbar"-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:orientation="vertical"-->
+
+<!--           android:layout_height="wrap_content">-->
+
+
+
+
+<!--           <TextView-->
+
+<!--               android:layout_width="match_parent"-->
+<!--               android:layout_height="100dp"-->
+<!--               android:gravity="center"-->
+<!--               android:text="@string/view_all_items"-->
+<!--               android:layout_gravity="bottom|center_horizontal"-->
+<!--               android:layout_marginTop="50dp"-->
+<!--               android:layout_marginBottom="20dp"-->
+<!--               android:background="#D8CECE"-->
+
+<!--               android:textSize="20sp"-->
+<!--               android:id="@+id/view"-->
+<!--               android:textStyle="bold"-->
+<!--               android:textColor="@color/black"-->
+<!--               />-->
+
+
+<!--           <TextView-->
+<!--               android:layout_width="match_parent"-->
+<!--               android:layout_height="100dp"-->
+<!--               android:gravity="center"-->
+<!--               android:text="Issue items"-->
+<!--               android:background="#D8CECE"-->
+
+<!--               android:id="@+id/issue"-->
+<!--               android:layout_gravity="bottom|center_horizontal"-->
+<!--               android:layout_marginTop="20dp"-->
+<!--               android:layout_marginBottom="20dp"-->
+<!--               android:textSize="20sp"-->
+<!--               android:textColor="@color/black"-->
+
+<!--               android:textStyle="bold"-->
+<!--               />-->
+
+
+
+<!--           <TextView-->
+<!--               android:layout_width="match_parent"-->
+<!--               android:layout_height="100dp"-->
+<!--               android:gravity="center"-->
+<!--               android:id="@+id/mynew_item"-->
+<!--               android:text="Add New Items"-->
+<!--               android:background="#D8CECE"-->
+<!--               android:layout_gravity="bottom|center_horizontal"-->
+<!--               android:layout_marginTop="20dp"-->
+<!--               android:layout_marginBottom="20dp"-->
+<!--               android:textColor="@color/black"-->
+
+<!--               android:textSize="20sp"-->
+<!--               android:textStyle="bold"-->
+<!--               />-->
+
+
+
+
+
+
+
+
+
+<!--       </LinearLayout>-->
+
+
+
+<!--&lt;!&ndash;       <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;           android:layout_width="200dp"&ndash;&gt;-->
+<!--&lt;!&ndash;           app:layout_constraintStart_toEndOf="@id/card3"&ndash;&gt;-->
+<!--&lt;!&ndash;           android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;           app:layout_constraintTop_toBottomOf="@id/card2"&ndash;&gt;-->
+<!--&lt;!&ndash;           app:cardElevation="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;           app:cardCornerRadius="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;           android:layout_margin="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;           app:cardBackgroundColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;           app:cardMaxElevation="12dp"&ndash;&gt;-->
+<!--&lt;!&ndash;           app:cardPreventCornerOverlap="true"&ndash;&gt;-->
+<!--&lt;!&ndash;           app:cardUseCompatPadding="true"&ndash;&gt;-->
+<!--&lt;!&ndash;           >&ndash;&gt;-->
+<!--&lt;!&ndash;           <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;               android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;               android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;               android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;               android:src="@drawable/homee"&ndash;&gt;-->
+<!--&lt;!&ndash;               android:layout_margin="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;               android:id="@+id/img"&ndash;&gt;-->
+<!--&lt;!&ndash;               android:contentDescription="@string/app_name" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;           <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;               android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;               android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;               android:text="Add New Items"&ndash;&gt;-->
+<!--&lt;!&ndash;               android:layout_gravity="bottom|center_horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;               android:layout_marginTop="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;               android:layout_marginBottom="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;               android:textSize="20sp"&ndash;&gt;-->
+<!--&lt;!&ndash;               android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;               />&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;       </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+<!--   </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--</FrameLayout>-->
